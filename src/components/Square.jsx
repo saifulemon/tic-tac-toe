@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Square = () => {
+const Square = (props) => {
     return (
         <div>
-            <h3>This is Squrare UI</h3>
+            <button onClick={props.onClick}>{props.value}</button>
         </div>
     );
 };
